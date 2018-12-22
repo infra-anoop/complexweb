@@ -9,6 +9,7 @@ services:
 
 before_install:
   - docker build -t infra-anoop/complex-test -f ./client/Dockerfile.dev ./client
+  - docker run infra-anoop/complex-test npm test -- --coverage
 
 scripts:
   - docker run infra-anoop/complex-test npm test -- --coverage
