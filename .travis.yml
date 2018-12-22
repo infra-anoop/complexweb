@@ -14,14 +14,14 @@ scripts:
   - docker run infra-anoop/complex-test npm test -- --coverage
 
 after_success:
-  - docker build -t infra-anoop/complex-client ./client
-  - docker build -t infra-anoop/complex-server ./server
-  - docker build -t infra-anoop/complex-worker ./worker
-  - docker build -t infra-anoop/complex-nginx ./nginx
+  - docker build -t complex-client ./client
+  - docker build -t complex-server ./server
+  - docker build -t complex-worker ./worker
+  - docker build -t complex-nginx ./nginx
 #login
   - echo "$DOCKER_PASSWORD" | docker login -u $DOCKER_ID --password-stdin
 #push to docker hub
-  - docker push infra-anoop/complex-client
-  - docker push infra-anoop/complex-server
-  - docker push infra-anoop/complex-worker
-  - docker push infra-anoop/complex-nginx
+  - docker push complex-client
+  - docker push complex-server
+  - docker push complex-worker
+  - docker push complex-nginx
