@@ -1,5 +1,6 @@
 {
-  "containerDefintions": [
+  "AWSEBDockerrunVersion":2,
+  "containerDefinitions": [
     {
       "name": "client",
       "image": "anoopaagarwal/complex-client",
