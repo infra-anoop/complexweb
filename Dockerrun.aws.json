@@ -1,6 +1,6 @@
 {
   "AWSEBDockerrunVersion":2,
-  "networkMode": "awsvpc",
+  "networkMode": "host",
   "containerDefinitions": [
     {
       "name": "client",
