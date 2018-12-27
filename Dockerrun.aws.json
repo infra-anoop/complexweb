@@ -1,6 +1,6 @@
 {
   "AWSEBDockerrunVersion":2,
-  "networkMode": "host",
+  "networkMode": "bridge",
   "containerDefinitions": [
     {
       "name": "client",
