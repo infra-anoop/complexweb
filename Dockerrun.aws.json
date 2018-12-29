@@ -1,7 +1,6 @@
 {
   "AWSEBDockerrunVersion":2,
-  "networkMode": "bridge",
-  "containerDefinitions": [
+    "containerDefinitions": [
     {
       "name": "client",
       "image": "anoopagarwal/complex-client",
