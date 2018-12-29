@@ -15,7 +15,7 @@ scripts:
   - docker run infra-anoop/complex-test npm test -- --coverage
 
 after_success:
-  - docker build -t anoopagarwal/complex-client ./client
+  - docker build -t anoopagarwal/complex-client ./client --no-cache
   - docker build -t anoopagarwal/complex-server ./server
   - docker build -t anoopagarwal/complex-worker ./worker
   - docker build -t anoopagarwal/complex-nginx ./nginx
