@@ -5,7 +5,7 @@ RUN npm install
 COPY . .
 CMD ["npm", "run", "build"]
 RUN ["ls", "-l", "/app"]
-RUN ["ls", "-l", "/app/build"]
+RUN ["ls", "-l", "/app/build/"]
 
 
 FROM nginx
